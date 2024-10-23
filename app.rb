@@ -51,6 +51,6 @@ get("/wizard_divide") do
   @first_num = params.fetch("user_first").to_f
   @second_num = params.fetch("user_second").to_f
 
-  @result = (@first_num / @second_num) + (@first_num % @second_num)  
+  @result = (@first_num / @second_num)
   erb(:div_result)
 end
